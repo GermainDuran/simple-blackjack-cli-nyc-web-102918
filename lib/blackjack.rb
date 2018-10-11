@@ -42,7 +42,9 @@ def hit?(cards)
   prompt_user
   players_input=get_user_input
   if (players_input == 's')
-      
+     
+  elsif players_input =='h'
+      deal_card
   end 
 end
 
