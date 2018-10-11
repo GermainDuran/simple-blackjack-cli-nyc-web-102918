@@ -41,11 +41,16 @@ def hit?(cards)
   # code hit? here
   prompt_user
   players_input=get_user_input
-  if (players_input == 's')
+  if (players_input == "s")
      
-  elsif players_input =='h'
-      deal_card
+  elsif players_input =="h"
+     r=deal_card
+     cards= cards + r
+  else players_input != "s" && players_input != "h"
+     invalid_command
+     prompt_user
   end 
+  return cards
 end
 
 def invalid_command
