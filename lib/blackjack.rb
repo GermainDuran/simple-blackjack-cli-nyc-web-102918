@@ -55,6 +55,7 @@ end
 
 def invalid_command
   # code invalid_command here
+  puts "Please enter a valid command"
 end
 
 #####################################################
@@ -63,5 +64,16 @@ end
 
 def runner
   # code runner here
+  welcome 
+  initial_round
+  prompt_user
+  players_input=get_user_input
+  
+  if players_input == "h"
+    deal_card
+  elsif players_input == "s"
+    
+  
+  
 end
     
