@@ -65,14 +65,16 @@ end
 def runner
   # code runner here
   welcome 
-  initial_round
+  cards=initial_round
   prompt_user
   players_input=get_user_input
   
   if players_input == "h"
     deal_card
   elsif players_input == "s"
-    
+    prompt_user
+  else cards > 21
+    end_game
   
   
 end
