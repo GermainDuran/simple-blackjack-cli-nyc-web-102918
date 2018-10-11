@@ -39,7 +39,11 @@ end
 
 def hit?(cards)
   # code hit? here
-  
+  prompt_user
+  players_input=get_user_input
+  if (players_input == 's')
+      
+  end 
 end
 
 def invalid_command
